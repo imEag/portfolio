@@ -1,6 +1,7 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule} from "@angular/router";
 
+import { HomeComponent } from "./components/home/home.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { ProjectsComponent} from "./components/projects/projects.component";
 import { CreateComponent} from "./components/create/create.component";
@@ -9,8 +10,10 @@ import { ContactComponent} from "./components/contact/contact.component";
 import { Page404Component } from "./components/page404/page404.component";
 
 
+// TODO <!-- When the user enters any route will be redirected to the home page and will be scrolled to that section -->
 const appRoutes: Routes = [
-    {path: '', component: ProfileComponent},
+    {path: '', component: HomeComponent},
+    {path: 'profile', component: ProfileComponent},
     {path: 'projects', component: ProjectsComponent},
     {path: 'skills', component: SkillsComponent},
     {path: 'contact', component: ContactComponent},

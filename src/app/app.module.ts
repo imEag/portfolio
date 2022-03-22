@@ -13,6 +13,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BarComponent } from './components/bar/bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     BarComponent,
     FooterComponent,
     SkillsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
