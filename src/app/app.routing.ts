@@ -1,16 +1,18 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule} from "@angular/router";
 
+import { ProfileComponent } from "./components/profile/profile.component";
 import { ProjectsComponent} from "./components/projects/projects.component";
-import { AboutComponent} from "./components/about/about.component";
 import { CreateComponent} from "./components/create/create.component";
+import { SkillsComponent } from "./components/skills/skills.component";
 import { ContactComponent} from "./components/contact/contact.component";
-import { Page404Component } from "./components/page404/page404.component"
+import { Page404Component } from "./components/page404/page404.component";
+
 
 const appRoutes: Routes = [
-    {path: '', component: AboutComponent},
-    {path: 'about', component: AboutComponent},
+    {path: '', component: ProfileComponent},
     {path: 'projects', component: ProjectsComponent},
+    {path: 'skills', component: SkillsComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'create', component: CreateComponent},
     {path: '**', component: Page404Component},
