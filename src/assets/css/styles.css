@@ -56,6 +56,7 @@ body {
     --green-light: #c7f5eb;
     --blue-light: #e5f0ff;
     --blue: #0066ff;
+    --blue-dark: #0046af;
 }
 
 /* --- Set 1 rem to 10 px --- */
@@ -74,6 +75,11 @@ html {
     border-radius: 0.8rem;
     padding: 1.2rem 3.6rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--blue-dark);
 }
 
 .btn-alter {
@@ -84,6 +90,19 @@ html {
     border: 0.1rem solid var(--gray-dark);
     border-radius: 0.8rem;
     padding: 1.2rem 3.6rem;
-    cursor: pointer;
-    
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-alter:hover {
+    border: 0.1rem solid var(--black);
+    color: var(--black);
+    background-color: var(--gray);
+}
+
+@media only screen and (max-width: 400px) {
+    .btn, .btn-alter {
+        padding: 1.4rem 2rem;
+        font-size: 1.6rem;
+    }
 }

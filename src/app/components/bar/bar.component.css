@@ -23,11 +23,11 @@
     font-weight: bold;
     font-size: 1.8rem;
     margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .bar__ul a:hover {
     color: var(--blue);
-    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 320px) {
     .bar__ul a {
-        font-size: 1.2rem;
-        margin: 0.6;
+        font-size: 1.4rem;
+        margin: 0 0.6rem;
     }
 }
