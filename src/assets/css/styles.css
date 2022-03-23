@@ -1,3 +1,45 @@
+/* --- Importing fonts --- */
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter-thin";
+    src: url(../fonts/inter/Inter-Thin.ttf);
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(../fonts/inter/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter-black";
+    src: url(../fonts/inter/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "robot-thin";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto-black";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
 body {
-    background-color: pink;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
