@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/normalize.css/normalize.css",
+              "src/assets/css/normalize.css",
               "src/assets/css/styles.css"
             ],
             "scripts": []
