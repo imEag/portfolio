@@ -1,0 +1,7 @@
+ul {
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    list-style: none;
+    border-bottom: .1rem solid var(--gray-dark);
+}

@@ -43,3 +43,21 @@
 body {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
+
+/* --- Variables --- */
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray-light: #f7f7f8;
+    --gray-dark: #464863;
+    --green-dark: #138161;
+    --green-light: #c7f5eb;
+    --blue-light: #e5f0ff;
+    --blue: #0066ff;
+}
+
+/* --- Set 1 rem to 10 px --- */
+html {
+    font-size: 62.5%;
+}
