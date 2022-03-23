@@ -1,7 +1,6 @@
 .profile__info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* margin: 5rem 0; */
 }
 
 .info__1 {
@@ -11,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* border-radius: 2rem 0 0 2rem; */
     padding: 0 10rem;
     background-image: url(../../../assets/img/memphis-mini.png);
     background-color: var(--green-light);
@@ -38,7 +36,6 @@
     align-items: center;
     justify-content: flex-start;
     background-color: var(--gray-light);
-    /* border-radius: 0 2rem 2rem 0; */
     padding: 0 10rem;
     border: 0.2rem solid var(--gray-light);
 }
@@ -57,6 +54,13 @@
 
 .desc--desc {
     font-size: 2rem;
+    text-align: center;
+}
+
+.desc__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-btn {
@@ -65,4 +69,43 @@
 
 .contact-btn {
     margin: 0 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .info__desc, .info__1 {
+        padding: 0 4rem;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .info__desc {
+        padding: 0 1rem;
+    }
+    
+    .info--img {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .desc--hello {
+        font-size: 6rem;
+    }
+
+    .desc--desc {
+        font-size: 1.8rem;
+    }
+
+    .desc__buttons {
+        /* flex-direction: column; */
+
+    }
+
+    .work-btn {
+        margin: 0.2rem 0.4rem;
+    }
+    
+    .contact-btn {
+        margin: 0.2rem 0.4rem;
+    }
 }

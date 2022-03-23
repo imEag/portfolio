@@ -1,6 +1,6 @@
 .bar-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--white);
     border-bottom: .1rem solid var(--gray);
@@ -30,7 +30,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .bar-container{
         justify-content: center;
         margin-right: 0;
