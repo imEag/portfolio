@@ -1,7 +1,53 @@
-ul {
+.bar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: var(--white);
+    border-bottom: .1rem solid var(--gray);
+}
+
+.bar__ul {
     color: var(--black);
-    text-decoration: none;
     list-style: none;
-    border-bottom: .1rem solid var(--gray-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.bar__ul a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+}
+
+.bar__ul a:hover {
+    color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .bar-container{
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .bar__ul a {
+        font-size: 1.6rem;
+        margin: 0 .8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bar__ul a {
+        font-size: 1.2rem;
+        margin: 0.6;
+    }
 }
