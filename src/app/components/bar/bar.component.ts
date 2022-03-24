@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
@@ -6,16 +6,30 @@ import { LanguageService } from 'src/app/services/language.service';
   templateUrl: './bar.component.html',
   styleUrls: ['./bar.component.css']
 })
-export class BarComponent implements OnInit {
+export class BarComponent implements OnInit, OnDestroy {
+  
+  public subscription: any;
   public text: any;
+
   constructor(
+
     //LanguageServie is not included in providers because it is already included in app.module.ts in providers
     private _LanguageService: LanguageService
-  ) {
-    this.text = this._LanguageService.getText();
-  }
+
+  ) {}
 
   ngOnInit(): void {
+     //gets default text 
+    this.text = this._LanguageService.getTextDefault();
+
+    //Listens to a language changes and updates text
+    this.subscription = this._LanguageService.message_language.subscribe((text: any) => {
+      this.text = text;
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
 }
