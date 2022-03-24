@@ -7,12 +7,16 @@
     </div>
     <div class="info__2">
         <div class="desc-container">
-            <p class="desc--hello">Hello!</p>
-            <p class="desc--desc">I'm Emmanuel Arizabaleta, Web Developer.</p>
+            <p class="desc--hello">{{text.profile.title}}</p>
+            <p class="desc--desc">{{text.profile.description}}</p>
             <div class="desc__buttons">
-                <button class="work-btn btn-alter">See my work</button>
-                <button class="contact-btn btn">Talk to me</button>
+                <button class="work-btn btn-alter">{{text.profile.work_btn}}</button>
+                <button class="contact-btn btn">{{text.profile.contact_btn}}</button>
             </div>
         </div>
     </div>
+</div>
+<div class="lang-selector">
+    <button id="eng-btn" (click)="changeLang('english')">ENGLISH</button>
+    <button id="spa-btn" (click)="changeLang('spanish')">ESPAÑOL</button>
 </div>

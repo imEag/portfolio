@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  public text: any;
+
+  constructor(
+    //LanguageServie is not included in providers because it is already included in app.module.ts in providers
+    private _LanguageService: LanguageService
+  ) {
+    this.text = this._LanguageService.getText();
+  }
 
   ngOnInit(): void {
+
+  }
+
+  changeLang(language: string): void {
+    this._LanguageService.setLanguage(language);
+    this.text = this._LanguageService.getText();
   }
 
 }

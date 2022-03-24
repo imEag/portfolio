@@ -1,0 +1,14 @@
+{
+    "bar": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "skills",
+        "contact": "Contact"
+    },
+    "profile": {
+        "title": "Hello!",
+        "description": "I'm Emmanuel Arizabaleta, Web Developer.",
+        "work_btn": "See my work",
+        "contact_btn": "Talk to me"
+    }
+}

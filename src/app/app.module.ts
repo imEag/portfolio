@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { LanguageService } from './services/language.service';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule, 
     routing,
   ],
-  providers: [ appRoutingProviders ],
+  providers: [ appRoutingProviders, LanguageService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
