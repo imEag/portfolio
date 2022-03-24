@@ -64,6 +64,20 @@ html {
     font-size: 62.5%;
 }
 
+/* --- some things I dont like --- */
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin:  0;
+}
 /* --- buttons --- */
 
 .btn {

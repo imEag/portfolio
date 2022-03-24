@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--gray-light);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 4rem 0 0 0;
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul p, .footer ul a {
+    margin: .4rem 0;
+} 
+
+.footer ul h3 {
+    font-size: 1.8rem;
+}
+
