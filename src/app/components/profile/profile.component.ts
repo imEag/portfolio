@@ -27,10 +27,10 @@ export class ProfileComponent implements OnInit, OnDestroy {
       this.text = text;
     });
   }
-
+/* 
   changeLang(language: string): void {
     this._LanguageService.setLanguage(language);
-  }
+  } */
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();

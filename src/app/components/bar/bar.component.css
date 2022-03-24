@@ -1,3 +1,5 @@
+/* TODO fix bar position for 1200px or less*/
+
 .bar-container {
     display: flex;
     justify-content: flex-start;
