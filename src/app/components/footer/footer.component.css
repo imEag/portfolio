@@ -5,21 +5,48 @@
     align-items: flex-start;
     margin: 4rem 0 0 0;
     color: var(--black);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
-.footer ul {
+.footer__section__list, .footer__contact__list, .footer__lang__list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer ul p, .footer ul a {
+.section__list__el, .contact__list__el, .lang_list_el {
     margin: .4rem 0;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
 } 
 
-.footer ul h3 {
+.footer h3 {
     font-size: 1.8rem;
+    font-weight: normal;
+    text-align: center;
 }
 
+.footer--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer__section__list {
+    flex-direction: column;
+}
+
+.footer__contact__list {
+}
+
+.contact__list__el, .lang_list_el {
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
