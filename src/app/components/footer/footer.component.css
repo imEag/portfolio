@@ -5,7 +5,7 @@
     align-items: flex-start;
     margin: 4rem 0 0 0;
     color: var(--black);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .footer__section__list, .footer__contact__list, .footer__lang__list {
@@ -19,24 +19,30 @@
     font-weight: bold;
     text-align: center;
     margin: 1rem 0;
+    cursor: pointer;
 } 
 
 .footer h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: normal;
     text-align: center;
 }
 
 .footer--icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .footer__section__list {
     flex-direction: column;
 }
 
-.footer__contact__list {
+.section__list__el {
+    transition: all 0.3s ease-in-out;
+}
+
+.section__list__el:hover {
+    color: var(--blue);
 }
 
 .contact__list__el, .lang_list_el {

@@ -16,12 +16,12 @@ export class ProfileComponent implements OnInit, OnDestroy {
     //LanguageServie is not included in providers because it is already included in app.module.ts in providers
     private _LanguageService: LanguageService
 
-  ) {}
-  
+  ) { }
+
   ngOnInit(): void {
     //gets default text 
     this.text = this._LanguageService.getTextDefault();
-    
+
     //Listens to a language changes and updates text
     this.subscription = this._LanguageService.message_language.subscribe((text: any) => {
       this.text = text;

@@ -2,16 +2,16 @@
 
 <footer class="footer">
     <div class="footer__sections">
-        <h3 class="footer__sections--title">Sections</h3>
+        <h3 class="footer__sections--title">{{text.footer.sections.title}}</h3>
         <ul class="footer__sections__list">
-            <p class="section__list__el">Home</p>
-            <p class="section__list__el">Skills</p>
-            <p class="section__list__el">Projects</p>
-            <p class="section__list__el">Contact</p>
+            <p class="section__list__el">{{text.footer.sections.home}}</p>
+            <p class="section__list__el">{{text.footer.sections.skills}}</p>
+            <p class="section__list__el">{{text.footer.sections.projects}}</p>
+            <p class="section__list__el">{{text.footer.sections.contact}}</p>
         </ul>
     </div>
     <div class="footer__contact">
-        <h3 class="footer__contact--title">Contact Me</h3>
+        <h3 class="footer__contact--title">{{text.footer.contact.title}}</h3>
         <ul class="footer__contact__list">
             <a href="" class="contact__list__el">
                 <img class="footer--icon" src="../../../assets/icons/social_media/github.png" alt="Github">
@@ -28,13 +28,13 @@
         </ul>
     </div>
     <div class="footer__lang">
-        <h3 class="footer__lang--title">Language</h3>
+        <h3 class="footer__lang--title">{{text.footer.langs.title}}</h3>
         <ul class="footer__lang__list">
             <p class="lang_list_el">
-                <img class="footer--icon" src="../../../assets/icons/social_media/united-kingdom.png" alt="English">
+                <img class="footer--icon" src="../../../assets/icons/social_media/united-kingdom.png" alt="English" (click)="changeLang('english')">
             </p>
             <p class="lang_list_el">
-                <img class="footer--icon" src="../../../assets/icons/social_media/spain.png" alt="Spanish">
+                <img class="footer--icon" src="../../../assets/icons/social_media/spain.png" alt="Spanish" (click)="changeLang('spanish')">
             </p>
         </ul>
     </div>

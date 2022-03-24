@@ -10,5 +10,20 @@
         "description": "I'm Emmanuel Arizabaleta, Web Developer.",
         "work_btn": "See my work",
         "contact_btn": "Talk to me"
+    },
+    "footer": {
+        "sections": {
+            "title": "Sections",
+            "home": "Home",
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact Me"
+        },
+        "langs": {
+            "title": "Language"
+        }
     }
 }

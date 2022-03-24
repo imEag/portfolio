@@ -10,5 +10,20 @@
         "description": "Soy Emmanuel Arizabaleta, Desarrollador Web.",
         "work_btn": "Ver mi trabajo",
         "contact_btn": "Contactarme"
+    },
+    "footer": {
+        "sections": {
+            "title": "Secciones",
+            "home": "Inicio",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        },
+        "contact": {
+            "title": "Contáctame"
+        },
+        "langs": {
+            "title": "Idioma"
+        }
     }
 }
