@@ -1,0 +1,32 @@
+.skills {
+    background-color: var(--gray-dark);
+    margin: 0;
+    padding: 4rem 2rem;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills__list__el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__list__el--img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.skills__list__el--name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    word-wrap:break-word;
+}
