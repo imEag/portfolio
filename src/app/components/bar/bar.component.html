@@ -1,5 +1,6 @@
 <!-- TODO make a burguer menu for less than 600 px screen width -->
 <div class="bar-container">
+  <img class="bar__btn--mobile" src="../../../assets/icons/ui/burger_menu.png" alt="">
   <ul class="bar__ul">
     <!-- When clicking the user will be scrolled to that section -->
     <a [routerLink]="['/']">{{text.bar.home}}</a>
@@ -8,4 +9,14 @@
     <a [routerLink]="['/']">{{text.bar.contact}}</a>
     <!-- <a [routerLink]="['/']">Create</a> -->
   </ul>
+  <div class="bar-container--mobile">
+    <ul class="bar__ul bar__ul--mobile">
+      <!-- When clicking the user will be scrolled to that section -->
+      <a [routerLink]="['/']">{{text.bar.home}}</a>
+      <a [routerLink]="['/']">{{text.bar.projects}}</a>
+      <a [routerLink]="['/']">{{text.bar.skills}}</a>
+      <a [routerLink]="['/']">{{text.bar.contact}}</a>
+      <!-- <a [routerLink]="['/']">Create</a> -->
+    </ul>
+  </div>
 </div>
