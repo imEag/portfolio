@@ -65,10 +65,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.work-btn, .contact-btn {
-    margin: 4rem 1rem 0 1rem;
+    flex-wrap: wrap;
+    padding: 4rem 0 2rem 0;
 }
 
 
@@ -80,9 +78,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-    .info__2 {
-        padding: 0 1rem;
-    }
+    
 
     .info--img {
         width: 25rem;
@@ -94,7 +90,7 @@
     }
 
     .desc--desc {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
 
@@ -129,12 +125,9 @@
     .info__2 {
         grid-column: unset;
         grid-row: 2/3;
-        height: 25rem;
+        height: auto;
         margin: 0;
         padding: 0;
     }
 
-    .work-btn, .contact-btn {
-        margin: 3rem 1rem 0 1rem;
-    }
 }

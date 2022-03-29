@@ -2,7 +2,7 @@
 
 .bar-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: var(--white);
     border-bottom: .1rem solid var(--gray);
@@ -14,8 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 2rem; */
-    margin-right: 5rem;
+    gap: 2rem;
     cursor: pointer;
 }
 
@@ -23,8 +22,8 @@
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
-    font-size: 1.8rem;
-    margin: 1.8rem 1rem;
+    font-size: 2rem;
+    padding: 1.8rem 0.6rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -32,24 +31,25 @@
     color: var(--blue);
 }
 
-@media only screen and (max-width: 1200px) {
-    .bar-container{
-        justify-content: center;
-        margin-right: 0;
-    }
-}
-
 
 @media only screen and (max-width: 400px) {
     .bar__ul a {
         font-size: 1.6rem;
-        margin: 0 .8rem;
+        padding: 1.8rem 0.4rem;
+    }
+
+    .bar__ul {
+        gap: 0.2rem;
     }
 }
-
+/* 
 @media only screen and (max-width: 320px) {
     .bar__ul a {
         font-size: 1.4rem;
-        margin: 0 0.6rem;
+        padding: 1.4rem 1rem;
     }
-}
+
+    .bar__ul {
+        gap: 0.2rem;
+    }
+} */

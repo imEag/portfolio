@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: flex-start;
     margin: 4rem 0 0 0;
+    padding: 2rem 0;
     color: var(--black);
     font-size: 1.8rem;
 }
@@ -15,16 +16,16 @@
 }
 
 .section__list__el, .contact__list__el, .lang_list_el {
-    margin: .4rem 0;
-    font-weight: bold;
+    margin: 0;
+    font-weight: normal;
     text-align: center;
-    margin: 1rem 0;
+    padding: 1rem 0rem;
     cursor: pointer;
 } 
 
 .footer h3 {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -39,6 +40,7 @@
 
 .section__list__el {
     transition: all 0.3s ease-in-out;
+    padding: 1rem 4rem;
 }
 
 .section__list__el:hover {
@@ -46,7 +48,7 @@
 }
 
 .contact__list__el, .lang_list_el {
-    margin: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 @media only screen and (max-width: 600px) {

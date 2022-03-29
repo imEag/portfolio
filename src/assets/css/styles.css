@@ -83,7 +83,7 @@ p {
 
 .btn {
     font-weight: regular;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--white);
     background-color: var(--blue);
     border: 0.1rem solid var(--blue);
@@ -91,6 +91,7 @@ p {
     padding: 1.2rem 3.6rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -99,7 +100,7 @@ p {
 
 .btn-alter {
     font-weight: regular;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--gray-dark);
     background-color: var(--white);
     border: 0.1rem solid var(--gray-dark);
@@ -107,6 +108,7 @@ p {
     padding: 1.2rem 3.6rem;
     cursor: pointer; 
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
 .btn-alter:hover {
@@ -117,7 +119,7 @@ p {
 
 @media only screen and (max-width: 400px) {
     .btn, .btn-alter {
-        padding: 1.4rem 2rem;
-        font-size: 1.6rem;
+        padding: 1.4rem 1rem;
+        font-size: 1.8rem;
     }
 }
