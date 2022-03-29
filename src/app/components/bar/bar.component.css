@@ -32,30 +32,12 @@
 }
 
 
-/* @media only screen and (max-width: 400px) {
-    .bar__ul a {
-        font-size: 1.6rem;
-        padding: 1.8rem 0.4rem;
-    }
-
-    .bar__ul {
-        gap: 0.2rem;
-    }
-} */
-/* 
-@media only screen and (max-width: 320px) {
-    .bar__ul a {
-        font-size: 1.4rem;
-        padding: 1.4rem 1rem;
-    }
-
-    .bar__ul {
-        gap: 0.2rem;
-    }
-} */
-
-
 /* --- Mobile menu --- */
+
+.bar-container--mobile {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
 
 .bar__btn--mobile {
     display: none;
@@ -63,10 +45,6 @@
     height: 3rem;
     padding: 1.8rem 1.8rem;
     cursor: pointer;
-}
-
-.bar-container--mobile {
-    display: none;
 }
 
 @media only screen and (max-width: 400px) {
@@ -101,4 +79,10 @@
     .bar__ul a {
         padding: 2rem 4rem;
     }
+
+
+}
+
+.bar__close-btn--mobile {
+    padding: 2rem 4rem;
 }
