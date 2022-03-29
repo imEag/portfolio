@@ -3,13 +3,14 @@ import * as skills_json from 'src/app/text/skills.json';
 
 @Injectable()
 export class SkillsService {
-    public skills: Array<any>;
+    public skills: any;
 
     constructor() {
-        this.skills = skills_json.skills;
+        this.skills = skills_json;
+        this.skills = this.skills.skills;
     }
 
-    getSkills(): Array<any> {
+    getSkills(): any[]{
         return this.skills;
     }
 }

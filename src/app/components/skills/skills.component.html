@@ -1,9 +1,12 @@
 <!-- TODO put two arrows to scroll through skills section without using a scroll bar -->
 <section class="skills">
     <ul class="skills__list">
-        <div class="skills__list__el">
-            <img class="skills__list__el--img" src="./../../../assets/icons/skills/html5.png" alt="logo">
-            <p class="skills__list__el--name">HTML 5</p>
+        <div class="skills__list__el" *ngFor="let element of skills_list">
+            
+            <!-- TODO in production: uncomment line below and comment the line below thw line below -->
+            <!-- <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo"> -->
+            <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo">
+            <p class="skills__list__el--name">{{element.name}}</p>
         </div>
         
     </ul>
