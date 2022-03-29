@@ -67,6 +67,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 4rem 0 2rem 0;
+    gap: 1rem;
 }
 
 
