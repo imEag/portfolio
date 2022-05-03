@@ -16,6 +16,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 
 import { LanguageService } from './services/language.service';
+import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { LanguageService } from './services/language.service';
     FooterComponent,
     SkillsComponent,
     HomeComponent,
+    ProjectPreviewComponent,
   ],
   imports: [
     BrowserModule,
