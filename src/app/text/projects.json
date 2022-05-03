@@ -1,0 +1,37 @@
+{
+    "projects": [
+        {
+            "name": "Basic Stocktaking Manager",
+            "description": "A software designed to manage stock through an interactive table",
+            "category": "Productivity",
+            "langs": "HTML, CSS, Javascript, AngularJS, NodeJS, MongoDB, Express",
+            "year": 2022,
+            "image": ""
+        },
+        {
+            "name": "Free Game Finder",
+            "description": "Web app to find any kind of free to play games.",
+            "category": "Entertainment",
+            "langs": "HTML, CSS, Javascript, AngularJS",
+            "year": 2021,
+            "image": ""
+        },
+        {
+            "name": "MDEWebCamp",
+            "description": "Web site for MDE Web Camp",
+            "category": "Productivity",
+            "langs": "HTML, CSS, Javascript, Jquery",
+            "year": 2019,
+            "image": ""
+        },
+        {
+            "name": "Web Portfolio",
+            "description": "My personal website",
+            "category": "Productivity",
+            "langs": "HTML, CSS, Javascript, AngularJS, NodeJS, MongoDB, Express",
+            "year": 2022,
+            "image": ""
+        }
+        
+    ]
+}

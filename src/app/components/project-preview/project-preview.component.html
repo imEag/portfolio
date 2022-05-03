@@ -3,16 +3,10 @@
         <img class="p-preview__images--img" src="./../../../assets/img/preview-img-test.png" alt="project preview image">
     </div>
     <div class="p-preview__desc">
-        <h4 class="p-preview__desc--title">Lorem title</h4>
-        <p class="p-preview__desc--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+        <h4 class="p-preview__desc--title">{{projectData.name}}</h4>
+        <p class="p-preview__desc--desc">{{projectData.description}}</p>
         <ul class="p_preview__desc__tools">
-            <li class="p_preview__desc__tools--tool">HTML</li>
-            <li class="p_preview__desc__tools--tool">Javascript</li>
-            <li class="p_preview__desc__tools--tool">Angular</li>
-            <li class="p_preview__desc__tools--tool">CSS</li>
-            <li class="p_preview__desc__tools--tool">MongoDB</li>
-            <li class="p_preview__desc__tools--tool">Express</li>
-            <li class="p_preview__desc__tools--tool">Node JS</li>
+            <li class="p_preview__desc__tools--tool" *ngFor="let item of projectData.langs">{{item}}</li>
         </ul>
     </div>
 </article>
