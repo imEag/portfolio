@@ -1,11 +1,20 @@
 import { Injectable } from "@angular/core";
 import * as projects_json from 'src/app/text/projects.json';
+import { HttpClient, HttpHeaders} from "@angular/common/http";
+import { Observable } from "rxjs";
+import { Project } from "../models/project.model";
+import { Global } from "./global.service";
 
 @Injectable()
 export class ProjectsService {
     public projects: any;
+    public url: string;
 
-    constructor() {
+    constructor(
+        private _http: HttpClient
+    ) {
+        this.url = Global.url;
+
         this.projects = projects_json;
         this.projects = this.projects.projects;
 
@@ -17,6 +26,10 @@ export class ProjectsService {
 
             return project
         });
+    }
+
+    testService() {
+       return "testing service"; 
     }
 
     getProjects(): any[]{
