@@ -98,6 +98,16 @@ p {
     background-color: var(--blue-dark);
 }
 
+.btn[disabled] {
+    opacity: 0.5;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    background-color: var(--blue);
+}
+
+
 .btn-alter {
     font-weight: regular;
     font-size: 2rem;
@@ -115,6 +125,15 @@ p {
     border: 0.1rem solid var(--black);
     color: var(--black);
     background-color: var(--gray);
+}
+
+.btn-alter[disabled] {
+    opacity: 0.5;
+}
+
+.btn-alter[disabled]:hover {
+    cursor: not-allowed;
+    background-color: var(--white);
 }
 
 @media only screen and (max-width: 400px) {

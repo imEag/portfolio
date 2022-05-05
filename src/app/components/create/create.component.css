@@ -53,7 +53,7 @@ textarea.element__input {
     padding: 1rem 0;
 }
 
-input[type="file" i] {
-    text-align: center !important;
-    margin: 0 auto;
+.element__warning {
+    color: red;
+    font-size: 1.4rem;
 }

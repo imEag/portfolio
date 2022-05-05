@@ -3,28 +3,34 @@
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" class="create-form__form">
         <div class="create-form__form__element">
             <label for="name" class="element__label">Project name</label>
-            <input type="text" name="name" id="" #name="ngModel" [(ngModel)]="project.name" class="element__input">
+            <input type="text" name="name" id="" #name="ngModel" [(ngModel)]="project.name" class="element__input" required>
+            <span *ngIf="name.touched && !name.valid" class="element__warning">Name is mandatory</span>
         </div>
         <div class="create-form__form__element">
             <label for="description" class="element__label">Description</label>
-            <textarea name="description" id="" #description="ngModel" [(ngModel)]="project.description" class="element__input"></textarea>
+            <textarea name="description" id="" #description="ngModel" [(ngModel)]="project.description" class="element__input" required></textarea>
+            <span *ngIf="description.touched && !description.valid" class="element__warning">Description is mandatory</span>
         </div>
         <div class="create-form__form__element">
             <label for="category" class="element__label">Category</label>
-            <input type="text" name="category" id="" #category="ngModel" [(ngModel)]="project.category" class="element__input">
+            <input type="text" name="category" id="" #category="ngModel" [(ngModel)]="project.category" class="element__input" required>
+            <span *ngIf="category.touched && !category.valid" class="element__warning">Category is mandatory</span>
         </div>
         <div class="create-form__form__element">
             <label for="year" class="element__label">Launch year</label>
-            <input type="number" name="year" id="" #year="ngModel" [(ngModel)]="project.year" class="element__input">
+            <input type="number" name="year" id="" #year="ngModel" [(ngModel)]="project.year" class="element__input" required>
+            <span *ngIf="year.touched && !year.valid" class="element__warning">Launch year is mandatory</span>
         </div>
         <div class="create-form__form__element">
             <label for="langs" class="element__label">Implemented tools</label>
-            <textarea name="langs" id="" #langs="ngModel" [(ngModel)]="project.langs" class="element__input" placeholder="Divide by commas and blank space (e.g. HTMl, CSS, Javscript)"></textarea>
+            <textarea name="langs" id="" #langs="ngModel" [(ngModel)]="project.langs" class="element__input" placeholder="Divide by commas and blank space (e.g. HTMl, CSS, Javscript)" required></textarea>
+            <span *ngIf="langs.touched && !langs.valid" class="element__warning">Tools field is mandatory</span>
         </div>
         <div class="create-form__form__element">
             <label for="image" class="element__label">Image</label>
-            <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input element__input--file btn-alter" placeholder="Upload image">
+            <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input element__input--file btn-alter" placeholder="Upload image" required>
+            <span *ngIf="image.touched && !image.valid" class="element__warning">Image is mandatory</span>
         </div>
-        <input type="submit" value="send" class="create-form__form__send btn">
+        <input type="submit" value="send" class="create-form__form__send btn" [disabled]="!projectForm.form.valid">
     </form>
 </div>
