@@ -19,12 +19,12 @@
         </div>
         <div class="create-form__form__element">
             <label for="langs" class="element__label">Implemented tools</label>
-            <textarea name="langs" id="" #langs="ngModel" [(ngModel)]="project.langs" class="element__input"></textarea>
+            <textarea name="langs" id="" #langs="ngModel" [(ngModel)]="project.langs" class="element__input" placeholder="Divide by commas and blank space (e.g. HTMl, CSS, Javscript)"></textarea>
         </div>
         <div class="create-form__form__element">
             <label for="image" class="element__label">Image</label>
-            <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input" placeholder="Upload image">
+            <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input element__input--file btn-alter" placeholder="Upload image">
         </div>
-        <input type="submit" value="send">
+        <input type="submit" value="send" class="create-form__form__send btn">
     </form>
 </div>

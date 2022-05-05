@@ -1,0 +1,59 @@
+.create-form--container {
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    max-width: 30rem;
+}
+
+.create-form__title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.create-form__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.create-form__form__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    width: 100%;
+}
+
+.element__label {
+    font-size: 2rem;
+}
+
+.element__input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+textarea.element__input {
+    height: 6rem;
+}
+
+.element__input--file {
+    padding: 1rem 0;
+}
+
+input[type="file" i] {
+    text-align: center !important;
+    margin: 0 auto;
+}
