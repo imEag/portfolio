@@ -39,6 +39,8 @@ import { ProjectPreviewComponent } from './components/project-preview/project-pr
     BrowserModule,
     AppRoutingModule, 
     routing,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ appRoutingProviders, LanguageService ],
   bootstrap: [AppComponent]
