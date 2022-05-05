@@ -1,5 +1,11 @@
 <div class="create-form--container">
     <h2 class="create-form__title">{{title}}</h2>
+    <div class="message success" *ngIf="status == 'success'">
+        The project has been created successfully. You can see it <a href="#">here</a>
+    </div>
+    <div class="message failed" *ngIf="status == 'failed'">
+        An error ocurred. The project coulnd't be created.
+    </div>
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" class="create-form__form">
         <div class="create-form__form__element">
             <label for="name" class="element__label">Project name</label>
@@ -31,6 +37,6 @@
             <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input element__input--file btn-alter" placeholder="Upload image" required>
             <span *ngIf="image.touched && !image.valid" class="element__warning">Image is mandatory</span>
         </div>
-        <input type="submit" value="send" class="create-form__form__send btn" [disabled]="!projectForm.form.valid">
+        <input type="submit" value="Send" class="create-form__form__send btn" [disabled]="!projectForm.form.valid">
     </form>
 </div>

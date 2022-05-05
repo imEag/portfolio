@@ -58,6 +58,7 @@ body {
     --blue-light: #e5f0ff;
     --blue: #0066ff;
     --blue-dark: #0046af;
+    --red: rgb(255, 148, 148);
 }
 
 /* --- Set 1 rem to 10 px --- */
@@ -141,4 +142,27 @@ p {
         padding: 1.4rem 1rem;
         font-size: 1.8rem;
     }
+}
+
+
+/*--- message --- */
+
+.message {
+    padding: 1rem;
+    background-color: var(--gray);
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.message a {
+    text-decoration: underline;
+}
+
+.success {
+    background-color: var(--green-light);
+}
+
+.failed {
+    background-color: var(--red);
 }
