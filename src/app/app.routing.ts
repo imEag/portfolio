@@ -14,7 +14,8 @@ import { Page404Component } from "./components/page404/page404.component";
 // TODO <!-- When the user enters any route will be redirected to the home page and will be scrolled to that section -->
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
-    {path: '**', component: Page404Component},
+    {path: 'create', component: CreateComponent},
+    {path: '**', component: Page404Component}
 ];
 
 /* 

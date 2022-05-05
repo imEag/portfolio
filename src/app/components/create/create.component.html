@@ -21,6 +21,10 @@
             <label for="langs" class="element__label">Implemented tools</label>
             <textarea name="langs" id="" #langs="ngModel" [(ngModel)]="project.langs" class="element__input"></textarea>
         </div>
+        <div class="create-form__form__element">
+            <label for="image" class="element__label">Image</label>
+            <input type="file" name="image" id="" #image="ngModel" [(ngModel)]="project.image" class="element__input" placeholder="Upload image">
+        </div>
         <input type="submit" value="send">
     </form>
 </div>
