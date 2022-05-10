@@ -17,7 +17,6 @@ export class SkillsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.skills_list);
   }
 
 }
