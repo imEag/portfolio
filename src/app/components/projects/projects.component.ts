@@ -12,11 +12,13 @@ import { Global } from 'src/app/services/global.service';
 export class ProjectsComponent implements OnInit {
 
   public projectsList: any[];
+  public url: string;
 
   constructor(
     private _projectsService: ProjectsService
   ) {
     this.projectsList = [];
+    this.url = Global.url;
   }
 
   ngOnInit(): void {

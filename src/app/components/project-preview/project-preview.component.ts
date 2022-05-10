@@ -7,9 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProjectPreviewComponent implements OnInit {
 
-  @Input() projectData: any; 
-  constructor() { }
-
+  @Input() projectData: any;
+  @Input() projectsUrl: any; 
+  constructor() { 
+    
+  }
+  
   ngOnInit(): void {
   }
 
