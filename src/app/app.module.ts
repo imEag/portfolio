@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 
 import { LanguageService } from './services/language.service';
 import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
+import { ManageComponent } from './components/manage/manage.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { ProjectPreviewComponent } from './components/project-preview/project-pr
     SkillsComponent,
     HomeComponent,
     ProjectPreviewComponent,
+    ManageComponent,
   ],
   imports: [
     BrowserModule,

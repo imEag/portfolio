@@ -17,7 +17,8 @@
             "home": "Inicio",
             "skills": "Habilidades",
             "projects": "Proyectos",
-            "contact": "Contacto"
+            "contact": "Contacto",
+            "manage": "Gestionar"
         },
         "contact": {
             "title": "Contáctame"

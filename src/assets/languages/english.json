@@ -17,7 +17,8 @@
             "home": "Home",
             "skills": "Skills",
             "projects": "Projects",
-            "contact": "Contact"
+            "contact": "Contact",
+            "manage": "Manage"
         },
         "contact": {
             "title": "Contact Me"
