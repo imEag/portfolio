@@ -59,6 +59,7 @@ body {
     --blue: #0066ff;
     --blue-dark: #0046af;
     --red: rgb(255, 148, 148);
+    --red-dark: rgb(250, 82, 82);
 }
 
 /* --- Set 1 rem to 10 px --- */

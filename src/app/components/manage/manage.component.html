@@ -1,1 +1,12 @@
-<p>manage works!</p>
+<h3 class="manage--title">manage existing projects or <button class="redirect-create-project-btn btn" routerLink="/create">Create new</button></h3>
+<section class="manage--container">
+    <ng-template ngFor let-project [ngForOf]="projectsList">
+        <div class="manage__project--container">
+            <app-project-preview class="manage__project-preview" [projectData]="project" [projectsUrl]="url"></app-project-preview>
+            <div class="manage__project__buttons">
+                <button class="buttons__edit-btn btn-alter">Edit</button>
+                <button class="buttons__delete-btn btn" (click)="deleteProject(project._id)">Delete</button>
+            </div>
+        </div>
+    </ng-template>
+</section>

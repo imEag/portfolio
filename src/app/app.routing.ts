@@ -20,17 +20,6 @@ const appRoutes: Routes = [
     {path: '**', component: Page404Component}
 ];
 
-/* 
-const appRoutes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'profile', component: ProfileComponent},
-    {path: 'projects', component: ProjectsComponent},
-    {path: 'skills', component: SkillsComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'create', component: CreateComponent},
-    {path: '**', component: Page404Component},
-]; 
-*/
 
 export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders<any> = RouterModule.forRoot(appRoutes);
