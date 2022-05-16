@@ -20,6 +20,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LanguageService } from './services/language.service';
 import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
 import { ManageComponent } from './components/manage/manage.component';
+import { EditComponent } from './components/edit/edit.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ManageComponent } from './components/manage/manage.component';
     HomeComponent,
     ProjectPreviewComponent,
     ManageComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
