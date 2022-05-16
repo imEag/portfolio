@@ -33,6 +33,10 @@
             <span *ngIf="langs.touched && !langs.valid" class="element__warning">Tools field is mandatory</span>
         </div>
         <div class="create-form__form__element">
+            <div class="element__display-image--container" *ngIf="project.image">
+                <img class="element__display-image__image" src="{{url+'getImage/'+project.image}}" alt="project preview image" width="150px">
+            </div>
+            
             <label for="image" class="element__label">Image</label>
             <input type="file" name="image" id="" #image="ngModel" (ngModel)="project.image" class="element__input element__input--file btn-alter" (change)="fileChangeEvent($event)" placeholder="Upload image" required>
             <span *ngIf="image.touched && !image.valid" class="element__warning">Image is mandatory</span>

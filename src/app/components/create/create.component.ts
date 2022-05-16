@@ -17,6 +17,7 @@ export class CreateComponent implements OnInit {
   public project: Project;
   public status: string;
   public filesToUpload: Array<any>;
+  public url: string;
 
 
   constructor(
@@ -27,6 +28,7 @@ export class CreateComponent implements OnInit {
     this.project = new Project('', '', '', '', 2022, '', '');
     this.status = 'none';
     this.filesToUpload = [];
+    this.url = Global.url;
   }
 
   ngOnInit(): void {

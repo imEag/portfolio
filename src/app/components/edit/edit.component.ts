@@ -18,6 +18,7 @@ export class EditComponent implements OnInit {
   public project: Project;
   public status: string;
   public filesToUpload: Array<any>;
+  public url: string;
 
   constructor(
     private _projectsServices: ProjectsService,
@@ -29,6 +30,7 @@ export class EditComponent implements OnInit {
     this.project = new Project('', '', '', '', 2022, '', '');
     this.status = 'none';
     this.filesToUpload = [];
+    this.url = Global.url;
   }
 
   ngOnInit(): void {
@@ -41,7 +43,6 @@ export class EditComponent implements OnInit {
   getProject(id: any) {
     this._projectsServices.getProject(id).subscribe(
       response => {
-        debugger;
         this.project = response.project;
       },
       error => {
