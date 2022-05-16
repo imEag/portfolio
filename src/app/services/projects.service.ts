@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders} from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { Project } from "../models/project.model";
 import { Global } from "./global.service";
@@ -19,19 +19,26 @@ export class ProjectsService {
         let params = JSON.stringify(project);
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.post(this.url+'save-project', params, {headers: headers});
+        return this._http.post(this.url + 'save-project', params, { headers: headers });
     }
 
-    getProjects():Observable<any> {
+    getProjects(): Observable<any> {
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.get(this.url+'projects', {headers: headers});
+        return this._http.get(this.url + 'projects', { headers: headers });
     }
 
     deleteProjects(id: any): Observable<any> {
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.delete(this.url+'project/'+id, {headers: headers});
+        return this._http.delete(this.url + 'project/' + id, { headers: headers });
+    }
+
+    updateProject(project: any): Observable<any> {
+        let params = JSON.stringify(project);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+        return this._http.put(this.url+'project/'+project._id, params, {headers: headers});
     }
 
 }

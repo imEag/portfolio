@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from 'src/app/services/projects.service';
 import { Project } from 'src/app/models/project.model';
 import { Global } from 'src/app/services/global.service';
+import { Observable } from 'rxjs';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-projects',
