@@ -36,7 +36,7 @@
             <div class="element__display-image--container" *ngIf="project.image">
                 <img class="element__display-image__image" src="{{url+'getImage/'+project.image}}" alt="project preview image" width="150px">
             </div>
-            
+            <!-- FIXME when editing, the user is not able to keep the current image, a new one has to be updated due to form valitadatio. To fix this maybe is necessary disable file validation in editing mode -->
             <label for="image" class="element__label">Image</label>
             <input type="file" name="image" id="" #image="ngModel" (ngModel)="project.image" class="element__input element__input--file btn-alter" (change)="fileChangeEvent($event)" placeholder="Upload image" required>
             <span *ngIf="image.touched && !image.valid" class="element__warning">Image is mandatory</span>

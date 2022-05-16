@@ -19,6 +19,7 @@ export class EditComponent implements OnInit {
   public status: string;
   public filesToUpload: Array<any>;
   public url: string;
+  public saveProject: any;
 
   constructor(
     private _projectsServices: ProjectsService,
@@ -52,7 +53,33 @@ export class EditComponent implements OnInit {
   }
 
   onSubmit(form: any) {
+    this._projectsServices.updateProject(this.project).subscribe(
+      response => {
+        if(response.project) {
 
+          // Upload image
+          if (this.filesToUpload) {
+            let uploadImageUrl = this.url+'uploadImage/'+response.project._id;
+
+            this._uploadService.makeFileRequest(uploadImageUrl, [], this.filesToUpload, 'image')
+            .then((result:any) => {
+              this.status = 'success';
+              this.saveProject = result.project;
+              this.status = 'success';
+            });
+  
+          } else {
+            this.saveProject = response.project;
+            this.status = 'success';
+          }
+        } else {
+          this.status = 'failed';
+        }
+      },
+      error => {
+          console.log(<any>error);
+      }
+    )
   }
 
   fileChangeEvent(fileInput: any) {
