@@ -34,14 +34,14 @@ export class EditComponent implements OnInit {
   ngOnInit(): void {
     this._route.params.subscribe(params => {
       let id = params['id'];
-
       this.getProject(id);
     })
   }
-
+  
   getProject(id: any) {
     this._projectsServices.getProject(id).subscribe(
       response => {
+        debugger;
         this.project = response.project;
       },
       error => {
