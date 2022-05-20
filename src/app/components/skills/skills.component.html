@@ -4,7 +4,7 @@
         <div class="skills__list__el" *ngFor="let element of skills_list">
             
             <!-- TODO in production: uncomment line below and comment the line below thw line below -->
-            <img class="skills__list__el--img" src="{{'../../../../..'+element.img_url}}" alt="logo">
+            <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
             <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
             <p class="skills__list__el--name">{{element.name}}</p>
         </div>
