@@ -1,63 +1,63 @@
 {
     "skills": [
         {
-            "img_url": "/src/assets/icons/skills/angular.png",
+            "img_url": "assets/icons/skills/angular.png",
             "name": "Angular JS"
         },
         {
-            "img_url": "/src/assets/icons/skills/nodejs.png",
+            "img_url": "assets/icons/skills/nodejs.png",
             "name": "Node JS"
         },
         {
-            "img_url": "/src/assets/icons/skills/Expressjs.png",
+            "img_url": "assets/icons/skills/Expressjs.png",
             "name": "Express JS"
         },
         {
-            "img_url": "/src/assets/icons/skills/mongodb.png",
+            "img_url": "assets/icons/skills/mongodb.png",
             "name": "MongoDB"
         },
         {
-            "img_url": "/src/assets/icons/skills/js.png",
+            "img_url": "assets/icons/skills/js.png",
             "name": "JavaScript"
         },
         {
-            "img_url": "/src/assets/icons/skills/html5.png",
+            "img_url": "assets/icons/skills/html5.png",
             "name": "HTML 5"
         },
         {
-            "img_url": "/src/assets/icons/skills/css3.png",
+            "img_url": "assets/icons/skills/css3.png",
             "name": "CSS 3"
         },
         {
-            "img_url": "/src/assets/icons/skills/git.png",
+            "img_url": "assets/icons/skills/git.png",
             "name": "Git"
         },
         {
-            "img_url": "/src/assets/icons/skills/github.png",
+            "img_url": "assets/icons/skills/github.png",
             "name": "GitHub"
         },
         {
-            "img_url": "/src/assets/icons/skills/html5.png",
+            "img_url": "assets/icons/skills/html5.png",
             "name": "HTML 5"
         },
         {
-            "img_url": "/src/assets/icons/skills/sass.png",
+            "img_url": "assets/icons/skills/sass.png",
             "name": "Sass"
         },
         {
-            "img_url": "/src/assets/icons/skills/jquery.png",
+            "img_url": "assets/icons/skills/jquery.png",
             "name": "JQuery"
         },
         {
-            "img_url": "/src/assets/icons/skills/mysql.png",
+            "img_url": "assets/icons/skills/mysql.png",
             "name": "MySQL"
         },
         {
-            "img_url": "/src/assets/icons/skills/python.png",
+            "img_url": "assets/icons/skills/python.png",
             "name": "Python"
         },
         {
-            "img_url": "/src/assets/icons/skills/npm.png",
+            "img_url": "assets/icons/skills/npm.png",
             "name": "NPM"
         }
     ]
