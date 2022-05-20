@@ -1,6 +1,6 @@
 
 <div class="bar-container">
-  <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="../../../assets/icons/ui/burger_menu.png" alt="menu-button">
+  <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="assets/icons/ui/burger_menu.png" alt="menu-button">
   <ul class="bar__ul">
     <!-- When clicking the user will be scrolled to that section -->
     <a [routerLink]="['/']">{{text.bar.home}}</a>
@@ -11,7 +11,7 @@
   </ul>
   <div class="bar-container--mobile" *ngIf="mobileBarOpened">
     <ul class="bar__ul bar__ul--mobile" >
-      <img class="bar__btn--mobile bar__close-btn--mobile" (click)="closeMobileBar()" src="../../../assets/icons/ui/x.png" alt="close-button">
+      <img class="bar__btn--mobile bar__close-btn--mobile" (click)="closeMobileBar()" src="assets/icons/ui/x.png" alt="close-button">
       <!-- When clicking the user will be scrolled to that section -->
       <a [routerLink]="['/']">{{text.bar.home}}</a>
       <a [routerLink]="['/']">{{text.bar.projects}}</a>
