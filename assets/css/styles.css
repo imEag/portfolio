@@ -1,0 +1,169 @@
+/* --- Importing fonts --- */
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter-thin";
+    src: url(../fonts/inter/Inter-Thin.ttf);
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(../fonts/inter/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter-black";
+    src: url(../fonts/inter/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "robot-thin";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto-black";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+/* --- Variables --- */
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray-light: #f7f7f8;
+    --gray-dark: #171a21;
+    --gray: #c8c8c8;
+    --gray-little-dark: #838383;
+    --green-dark: #138161;
+    --green-light: #c7f5eb;
+    --blue-light: #e5f0ff;
+    --blue: #0066ff;
+    --blue-dark: #0046af;
+    --red: rgb(255, 148, 148);
+    --red-dark: rgb(250, 82, 82);
+}
+
+/* --- Set 1 rem to 10 px --- */
+html {
+    font-size: 62.5%;
+}
+
+/* --- some things I dont like --- */
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin:  0;
+}
+/* --- buttons --- */
+
+.btn {
+    font-weight: regular;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--blue);
+    border: 0.1rem solid var(--blue);
+    border-radius: 0.8rem;
+    padding: 1.2rem 3.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: var(--blue-dark);
+}
+
+.btn[disabled] {
+    opacity: 0.5;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    background-color: var(--blue);
+}
+
+
+.btn-alter {
+    font-weight: regular;
+    font-size: 2rem;
+    color: var(--gray-dark);
+    background-color: var(--white);
+    border: 0.1rem solid var(--gray-dark);
+    border-radius: 0.8rem;
+    padding: 1.2rem 3.6rem;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-alter:hover {
+    border: 0.1rem solid var(--black);
+    color: var(--black);
+    background-color: var(--gray);
+}
+
+.btn-alter[disabled] {
+    opacity: 0.5;
+}
+
+.btn-alter[disabled]:hover {
+    cursor: not-allowed;
+    background-color: var(--white);
+}
+
+@media only screen and (max-width: 400px) {
+    .btn, .btn-alter {
+        padding: 1.4rem 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+
+/*--- message --- */
+
+.message {
+    padding: 1rem;
+    background-color: var(--gray);
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.message a {
+    text-decoration: underline;
+}
+
+.success {
+    background-color: var(--green-light);
+}
+
+.failed {
+    background-color: var(--red);
+}

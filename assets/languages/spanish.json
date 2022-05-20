@@ -1,0 +1,30 @@
+{
+    "bar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "profile": {
+        "title": "Hola!",
+        "description": "Soy Emmanuel Arizabaleta, Desarrollador Web.",
+        "work_btn": "Ver mi trabajo",
+        "contact_btn": "Contactarme"
+    },
+    "footer": {
+        "sections": {
+            "title": "Secciones",
+            "home": "Inicio",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto",
+            "manage": "Gestionar"
+        },
+        "contact": {
+            "title": "Contáctame"
+        },
+        "langs": {
+            "title": "Idioma"
+        }
+    }
+}

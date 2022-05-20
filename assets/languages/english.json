@@ -1,0 +1,30 @@
+{
+    "bar": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "profile": {
+        "title": "Hello!",
+        "description": "I'm Emmanuel Arizabaleta, Web Developer.",
+        "work_btn": "See my work",
+        "contact_btn": "Talk to me"
+    },
+    "footer": {
+        "sections": {
+            "title": "Sections",
+            "home": "Home",
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact",
+            "manage": "Manage"
+        },
+        "contact": {
+            "title": "Contact Me"
+        },
+        "langs": {
+            "title": "Language"
+        }
+    }
+}
