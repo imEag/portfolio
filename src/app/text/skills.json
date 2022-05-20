@@ -1,7 +1,7 @@
 {
     "skills": [
         {
-            "img_url": "src/assets/icons/skills/angular.png",
+            "img_url": "/src/assets/icons/skills/angular.png",
             "name": "Angular JS"
         },
         {
