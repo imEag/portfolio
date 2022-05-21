@@ -20,7 +20,7 @@ My personal website, also my portfolio.
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/vLr7x4c/fgf.png)
+![App Screenshot](https://i.ibb.co/ZNncS76/protfoliologo.png)
 
 
 ## License
