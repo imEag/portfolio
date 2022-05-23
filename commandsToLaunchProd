@@ -1,0 +1,3 @@
+ng build --base-href "https://imeag.github.io/portfolio/"
+
+npx angular-cli-ghpages --dir=dist/project-a     
