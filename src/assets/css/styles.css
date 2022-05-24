@@ -167,3 +167,5 @@ p {
 .failed {
     background-color: var(--red);
 }
+
+/* TODO make the website responsive for big screens (maybe add a max width) */
