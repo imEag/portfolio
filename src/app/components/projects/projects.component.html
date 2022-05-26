@@ -1,6 +1,5 @@
-<div class="projects--section--container">
-    <h3 class="projects--title">My Work</h3>
-    <div class="projects--container">
-        <app-project-preview *ngFor="let project of projectsList" [projectData]="project" [projectsUrl]="url"></app-project-preview>
-    </div>
-</div>
+
+<h3 class="projects--title">My Work</h3>
+<section class="projects--container">
+    <app-project-preview *ngFor="let project of projectsList" [projectData]="project" [projectsUrl]="url"></app-project-preview>
+</section>
