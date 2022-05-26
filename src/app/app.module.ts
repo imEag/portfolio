@@ -16,12 +16,12 @@ import { BarComponent } from './components/bar/bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
-
-import { LanguageService } from './services/language.service';
+import { EditComponent } from './components/edit/edit.component';
 import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
 import { ManageComponent } from './components/manage/manage.component';
-import { EditComponent } from './components/edit/edit.component';
 
+import { LanguageService } from './services/language.service';
+import { ScrollService } from './services/scroll.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,7 @@ import { EditComponent } from './components/edit/edit.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [ appRoutingProviders, LanguageService ],
+  providers: [ appRoutingProviders, LanguageService, ScrollService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
