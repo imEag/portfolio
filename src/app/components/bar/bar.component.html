@@ -4,20 +4,20 @@
   <ul class="bar__ul">
     <!-- TODO When clicking the user will be scrolled to that section -->
     <!-- TODO in mobile mode, When clicking the mobile bar menu will be closed -->
-    <a [routerLink]="['/']">{{text.bar.home}}</a>
-    <a [routerLink]="['/']">{{text.bar.projects}}</a>
-    <a [routerLink]="['/']">{{text.bar.skills}}</a>
-    <a [routerLink]="['/']">{{text.bar.contact}}</a>
+    <a>{{text.bar.home}}</a>
+    <a>{{text.bar.projects}}</a>
+    <a>{{text.bar.skills}}</a>
+    <a>{{text.bar.contact}}</a>
     <!-- <a [routerLink]="['/']">Create</a> -->
   </ul>
   <div class="bar-container--mobile" *ngIf="mobileBarOpened">
     <ul class="bar__ul bar__ul--mobile" >
       <img class="bar__btn--mobile bar__close-btn--mobile" (click)="closeMobileBar()" src="assets/icons/ui/x.png" alt="close-button">
       <!-- When clicking the user will be scrolled to that section -->
-      <a [routerLink]="['/']">{{text.bar.home}}</a>
-      <a [routerLink]="['/']">{{text.bar.projects}}</a>
-      <a [routerLink]="['/']">{{text.bar.skills}}</a>
-      <a [routerLink]="['/']">{{text.bar.contact}}</a>
+      <a>{{text.bar.home}}</a>
+      <a>{{text.bar.projects}}</a>
+      <a>{{text.bar.skills}}</a>
+      <a>{{text.bar.contact}}</a>
       <!-- <a [routerLink]="['/']">Create</a> -->
     </ul>
   </div>
