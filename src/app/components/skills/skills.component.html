@@ -1,5 +1,16 @@
 <!-- TODO Make an automatic scroll animation through skills section -->
 <section class="skills">
+    <div class="skills__band-container">
+        <ul class="skills__list">
+            <div class="skills__list__el" *ngFor="let element of skills_list">
+    
+                <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
+                <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
+                <p class="skills__list__el--name">{{element.name}}</p>
+            </div>
+    
+        </ul>
+    </div>
     <div class="skills__upper--container">
         <h3 class="skills--title">My Skills</h3>
         <div class="skills__card">
@@ -15,17 +26,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="skills__band-container">
-        <h4 class="skills__ban--title">The tools I use</h4>
-        <ul class="skills__list">
-            <div class="skills__list__el" *ngFor="let element of skills_list">
-
-                <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
-                <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
-                <p class="skills__list__el--name">{{element.name}}</p>
-            </div>
-
-        </ul>
     </div>
 </section>
