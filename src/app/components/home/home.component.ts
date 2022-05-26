@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(private _ScrollService: ScrollService) { }
 
   //get DOM reference
+  // FIXME add host listener to listen to any window width change
   @ViewChild('profile') profile!: ElementRef;
   @ViewChild('skills') skills!: ElementRef;
   @ViewChild('projects') projects!: ElementRef;

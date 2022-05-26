@@ -51,11 +51,28 @@ export class BarComponent implements OnInit, OnDestroy {
     this.subscriptionScroll.unsubscribe();
   }
 
-  openMobileBar() :void {
+  openMobileBar(): void {
     this.mobileBarOpened = true;
   }
 
-  closeMobileBar() :void {
+  closeMobileBar(): void {
     this.mobileBarOpened = false;
+  }
+
+  scrollTo(compName: string): void {
+  //scrolls to given section
+    switch (compName) {
+      case 'home':
+        document.documentElement.scrollTop = this.scrollPositions.profile;
+        break
+      case 'projects':
+        document.documentElement.scrollTop = this.scrollPositions.projects - 20;
+        break
+      case 'skills':
+        document.documentElement.scrollTop = this.scrollPositions.skills;
+        break
+      case 'contact':
+        break
+    }
   }
 }
