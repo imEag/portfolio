@@ -53,6 +53,9 @@ export class BarComponent implements OnInit, OnDestroy {
 
   openMobileBar(): void {
     this.mobileBarOpened = true;
+
+    //scroll to top
+    document.documentElement.scrollTop = 0;
   }
 
   closeMobileBar(): void {
@@ -74,5 +77,8 @@ export class BarComponent implements OnInit, OnDestroy {
       case 'contact':
         break
     }
+
+    //close menu
+    this.mobileBarOpened = false;
   }
 }

@@ -1,0 +1,9 @@
+.top-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-bottom: .1rem solid var(--gray);
+    font-weight: bolder;
+    font-size: 1rem;
+}

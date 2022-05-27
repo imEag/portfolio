@@ -1,13 +1,12 @@
 
 <div class="bar-container">
-  <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="assets/icons/ui/burger_menu.png" alt="menu-button">
+  <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="assets/icons/ui/burger_menu3.png" alt="menu-button">
   <ul class="bar__ul">
     <!-- TODO in mobile mode, When clicking the mobile bar menu will be closed -->
     <a (click)="scrollTo('home')">{{text.bar.home}}</a>
     <a (click)="scrollTo('projects')">{{text.bar.projects}}</a>
     <a (click)="scrollTo('skills')">{{text.bar.skills}}</a>
     <a (click)="scrollTo('contact')">{{text.bar.contact}}</a>
-    <!-- <a [routerLink]="['/']">Create</a> -->
   </ul>
   <div class="bar-container--mobile" *ngIf="mobileBarOpened">
     <ul class="bar__ul bar__ul--mobile" >
@@ -17,7 +16,6 @@
       <a (click)="scrollTo('projects')">{{text.bar.projects}}</a>
       <a (click)="scrollTo('skills')">{{text.bar.skills}}</a>
       <a (click)="scrollTo('contact')">{{text.bar.contact}}</a>
-      <!-- <a [routerLink]="['/']">Create</a> -->
     </ul>
   </div>
 </div>

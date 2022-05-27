@@ -3,8 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white);
-    border-bottom: .1rem solid var(--gray);
+    background-color: var(--gray-dark);
 }
 
 .bar__ul {
@@ -13,21 +12,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
     cursor: pointer;
 }
 
 .bar__ul a {
     text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 1.8rem 0.6rem;
     transition: all 0.3s ease-in-out;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    padding: 4rem 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .bar__ul a {
+        padding: 4rem 1rem;
+    }
 }
 
 .bar__ul a:hover {
-    color: var(--blue);
+    background-color: var(--white);
+    color: var(--black);
 }
 
 
@@ -42,11 +49,17 @@
     display: none;
     width: 3rem;
     height: 3rem;
-    padding: 1.8rem 1.8rem;
+    padding: 3rem 2rem;
     cursor: pointer;
+    /* turn white a black png  */
+    /* filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(107%) contrast(101%); */
 }
 
-@media only screen and (max-width: 450px) {
+.bar__ul--mobile a {
+    color: var(--black);
+}
+
+@media only screen and (max-width: 550px) {
 
     .bar__ul {
         display: none;

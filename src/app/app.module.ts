@@ -23,6 +23,7 @@ import { ManageComponent } from './components/manage/manage.component';
 import { LanguageService } from './services/language.service';
 import { ScrollService } from './services/scroll.service';
 import { SkillsDescriptionComponent } from './components/skills-description/skills-description.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SkillsDescriptionComponent } from './components/skills-description/skil
     ManageComponent,
     EditComponent,
     SkillsDescriptionComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
