@@ -15,6 +15,9 @@
         "title": "My Skills",
         "description": "My main experience is front end development, where I build powerful, reactive and useful websites. I use HTML, CSS and JavaScript joint with AngularJS and Jquery. I also develop backend applications such as REST APIs built with NodeJs, ExpressJs, MongoDB and more technologies."
     },
+    "projects": {
+        "title": "My Work"
+    },
     "footer": {
         "sections": {
             "title": "Sections",
