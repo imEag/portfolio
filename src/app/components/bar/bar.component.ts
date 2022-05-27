@@ -97,7 +97,7 @@ export class BarComponent implements OnInit, OnDestroy {
     
     let barScrollPosition = this.bar.nativeElement.offsetTop;
     let userScrollPosition = window.scrollY;
-    console.log(barScrollPosition, userScrollPosition);
+    
     if (userScrollPosition >= barScrollPosition) {
       this.barIsFixed = true;
     } else {
