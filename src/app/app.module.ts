@@ -22,6 +22,7 @@ import { ManageComponent } from './components/manage/manage.component';
 
 import { LanguageService } from './services/language.service';
 import { ScrollService } from './services/scroll.service';
+import { SkillsDescriptionComponent } from './components/skills-description/skills-description.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ScrollService } from './services/scroll.service';
     ProjectPreviewComponent,
     ManageComponent,
     EditComponent,
+    SkillsDescriptionComponent,
   ],
   imports: [
     BrowserModule,
