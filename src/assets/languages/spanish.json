@@ -11,6 +11,10 @@
         "work_btn": "Ver mi trabajo",
         "contact_btn": "Contactarme"
     },
+    "skillsDescription": {
+        "title": "Mis Habilidades",
+        "description": "Mi experiencia principal es el desarrollo front end, donde construyo aplicaciones reactivas, útiles y poderosas. Uso HTML, CSS, JavaScript combinado con AngularJs y Jquery. También desarrollo apliaciones en el back end, tales como APIs REST, construidas con NodeJs, ExpressJs, MongoDB y más tecnologías. "
+    },
     "footer": {
         "sections": {
             "title": "Secciones",
