@@ -1,5 +1,24 @@
-.skills {
+
+.skills__card__img--img {
+    width: 20rem;
+    height: 20rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../assets/img/computer.png);
+}
+
+.skills__band-container {
     background-color: var(--gray-dark);
+    padding: 2rem 0;
+}
+
+.skills__ban--title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--white);
 }
 
 .skills__list {

@@ -13,7 +13,6 @@ import { ManageComponent } from "./components/manage/manage.component";
 import { EditComponent } from "./components/edit/edit.component";
 
 
-// TODO <!-- When the user enters any route will be redirected to the home page and will be scrolled to that section -->
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'create', component: CreateComponent},
