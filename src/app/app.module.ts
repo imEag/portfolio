@@ -23,7 +23,6 @@ import { ManageComponent } from './components/manage/manage.component';
 import { LanguageService } from './services/language.service';
 import { ScrollService } from './services/scroll.service';
 import { SkillsDescriptionComponent } from './components/skills-description/skills-description.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +40,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     ManageComponent,
     EditComponent,
     SkillsDescriptionComponent,
-    NavBarComponent,
   ],
   imports: [
     BrowserModule,
