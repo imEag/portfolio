@@ -1,13 +1,20 @@
+<!-- 
+  This code has 2 main parts, one normal and another fixed
+  both part are the same, with the only difference that
+  when the user scrolls below the normal part, the fixed part will be
+  displayed and will stay fixed at the top of the screen
+-->
 
+<!-- normal part -->
 <div #bar class="bar-container">
   <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="assets/icons/ui/burger_menu3.png" alt="menu-button">
   <ul class="bar__ul">
-    <!-- TODO in mobile mode, When clicking the mobile bar menu will be closed -->
     <a (click)="scrollTo('home')">{{text.bar.home}}</a>
     <a (click)="scrollTo('projects')">{{text.bar.projects}}</a>
     <a (click)="scrollTo('skills')">{{text.bar.skills}}</a>
     <a (click)="scrollTo('contact')">{{text.bar.contact}}</a>
   </ul>
+  <!-- mobile normal part -->
   <div class="bar-container--mobile" *ngIf="mobileBarOpened">
     <ul class="bar__ul bar__ul--mobile" >
       <img class="bar__btn--mobile bar__close-btn--mobile" (click)="closeMobileBar()" src="assets/icons/ui/x.png" alt="close-button">
@@ -20,15 +27,16 @@
   </div>
 </div>
 
+<!-- fixed part -->
 <div class="bar-container sticky" *ngIf="barIsFixed">
   <img class="bar__btn--mobile bar__open-btn--mobile" (click)="openMobileBar()" src="assets/icons/ui/burger_menu3.png" alt="menu-button">
   <ul class="bar__ul">
-    <!-- TODO in mobile mode, When clicking the mobile bar menu will be closed -->
     <a (click)="scrollTo('home')">{{text.bar.home}}</a>
     <a (click)="scrollTo('projects')">{{text.bar.projects}}</a>
     <a (click)="scrollTo('skills')">{{text.bar.skills}}</a>
     <a (click)="scrollTo('contact')">{{text.bar.contact}}</a>
   </ul>
+  <!-- fixed mobile part -->
   <div class="bar-container--mobile" *ngIf="mobileBarOpened">
     <ul class="bar__ul bar__ul--mobile" >
       <img class="bar__btn--mobile bar__close-btn--mobile" (click)="closeMobileBar()" src="assets/icons/ui/x.png" alt="close-button">
