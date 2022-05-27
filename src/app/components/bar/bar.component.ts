@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LanguageService } from 'src/app/services/language.service';
 import { ScrollService } from 'src/app/services/scroll.service';
@@ -17,6 +17,12 @@ export class BarComponent implements OnInit, OnDestroy {
   public mobileBarOpened: boolean;
   public scrollPositions: any;
 
+  //this is used to display the fixed nav bar
+  public barIsFixed: boolean;
+
+  //gets bar html reference
+  @ViewChild('bar') bar!: ElementRef;
+
   constructor(
 
     //LanguageServie is not included in providers because it is already included in app.module.ts in providers
@@ -27,6 +33,8 @@ export class BarComponent implements OnInit, OnDestroy {
   ) {
     this.mobileBarOpened = false;
     this.scrollPositions = {}
+
+    this.barIsFixed = false;
   }
 
   ngOnInit(): void {
@@ -66,13 +74,14 @@ export class BarComponent implements OnInit, OnDestroy {
   //scrolls to given section
     switch (compName) {
       case 'home':
-        document.documentElement.scrollTop = this.scrollPositions.profile;
+        //-150 because of the nav bar that is fixed in the screen
+        document.documentElement.scrollTop = this.scrollPositions.profile -150;
         break
       case 'projects':
-        document.documentElement.scrollTop = this.scrollPositions.projects - 20;
+        document.documentElement.scrollTop = this.scrollPositions.projects - 170;
         break
       case 'skills':
-        document.documentElement.scrollTop = this.scrollPositions.skills;
+        document.documentElement.scrollTop = this.scrollPositions.skills - 150 ;
         break
       case 'contact':
         break
@@ -80,5 +89,19 @@ export class BarComponent implements OnInit, OnDestroy {
 
     //close menu
     this.mobileBarOpened = false;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  stickyBar(event: Event): void {
+    // listens to scroll event and verifies is user scroll position is below bar default position to make it fixed to top
+    
+    let barScrollPosition = this.bar.nativeElement.offsetTop;
+    let userScrollPosition = window.scrollY;
+    console.log(barScrollPosition, userScrollPosition);
+    if (userScrollPosition >= barScrollPosition) {
+      this.barIsFixed = true;
+    } else {
+      this.barIsFixed = false;
+    }
   }
 }

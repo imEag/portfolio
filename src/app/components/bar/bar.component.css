@@ -98,3 +98,12 @@
 .bar__close-btn--mobile {
     padding: 2rem 4rem;
 }
+
+/* Sticky bar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
