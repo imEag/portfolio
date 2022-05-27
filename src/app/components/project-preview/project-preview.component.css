@@ -18,7 +18,7 @@
 }
 
 .p-preview__desc {
-    padding:  2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .p-preview__desc--desc {
-font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .p_preview__desc__tools {
@@ -52,3 +52,5 @@ font-size: 1.8rem;
     color: var(--gray-little-dark);
     font-size: 1.2rem;
 }
+
+/* TODO add hover effect to the card */

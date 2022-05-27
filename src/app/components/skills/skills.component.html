@@ -1,12 +1,30 @@
 <!-- TODO Make an automatic scroll animation through skills section -->
 <section class="skills">
-    <ul class="skills__list">
-        <div class="skills__list__el" *ngFor="let element of skills_list">
-            
-            <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
-            <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
-            <p class="skills__list__el--name">{{element.name}}</p>
+    <div class="skills__band-container">
+        <ul class="skills__list">
+            <div class="skills__list__el" *ngFor="let element of skills_list">
+    
+                <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
+                <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
+                <p class="skills__list__el--name">{{element.name}}</p>
+            </div>
+    
+        </ul>
+    </div>
+    <div class="skills__upper--container">
+        <h3 class="skills--title">My Skills</h3>
+        <div class="skills__card">
+            <div class="skills__card__text">
+                <!-- TODO add language selection (important) -->
+                <p>I build powerful, reactive and useful websites. <br> <br> I develop both frontend and backend
+                    applications using AngularJS, Jquery,
+                    NodeJs, ExpressJS, MongoDB and more technologies.</p>
+                </div>
+            <div class="skills__card__img">
+                <div class="skills__card__img--img">
+
+                </div>
+            </div>
         </div>
-        
-    </ul>
+    </div>
 </section>
