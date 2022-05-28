@@ -11,8 +11,8 @@
             <p class="desc--hello">{{text.profile.title}}</p>
             <p class="desc--desc">{{text.profile.description}}</p>
             <div class="desc__buttons">
-                <button class="work-btn btn-alter">{{text.profile.work_btn}}</button>
-                <button class="contact-btn btn">{{text.profile.contact_btn}}</button>
+                <button (click)="scrollTo('projects')" class="work-btn btn-alter">{{text.profile.work_btn}}</button>
+                <button class="contact-btn btn"><a target="_blank" rel="noopener noreferrer" href="mailto:emma145@hotmail.es">{{text.profile.contact_btn}}</a></button>
             </div>
         </div>
     </div>

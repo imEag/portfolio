@@ -69,7 +69,14 @@
     flex-wrap: wrap;
     padding: 4rem 0 2rem 0;
     gap: 1rem;
+    
 }
+
+.desc__buttons a {
+    color: var(--white);
+} 
+
+
 
 
 @media only screen and (max-width: 1200px) {

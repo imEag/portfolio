@@ -36,7 +36,7 @@ export class BarComponent implements OnInit, OnDestroy {
 
   ) {
     this.mobileBarOpened = false;
-    this.scrollPositions = {}
+    this.scrollPositions = {};
 
     this.barIsFixed = false;
   }
