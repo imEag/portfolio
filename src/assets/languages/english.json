@@ -22,6 +22,9 @@
     "projects": {
         "title": "My Work"
     },
+    "contact": {
+        "title": "Contact"
+    },
     "footer": {
         "sections": {
             "title": "Sections",
