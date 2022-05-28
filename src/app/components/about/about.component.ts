@@ -26,7 +26,6 @@ export class AboutComponent implements OnInit {
     //Loads any language change from language service.
     this.subscription = this._LanguageService.message_language.subscribe((text: any) => {
       this.text = text;
-      console.log(this.text);
     });
   }
 
