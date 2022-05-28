@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('profile') profile!: ElementRef;
   @ViewChild('about') about!: ElementRef;
   @ViewChild('projects') projects!: ElementRef;
-
+  @ViewChild('contact') contact !: ElementRef;
 
 
   ngOnInit(): void {
@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     let componentsData = {
       'profile': this.profile.nativeElement.offsetTop,
       'about': this.about.nativeElement.offsetTop,
-      'projects': this.projects.nativeElement.offsetTop
+      'projects': this.projects.nativeElement.offsetTop,
+      'contact': this.contact.nativeElement.offsetBottom
     }
 
     // sends previous obj to Scroll Service
@@ -39,7 +40,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     let componentsData = {
       'profile': this.profile.nativeElement.offsetTop,
       'about': this.about.nativeElement.offsetTop,
-      'projects': this.projects.nativeElement.offsetTop
+      'projects': this.projects.nativeElement.offsetTop,
+      'contact': this.contact.nativeElement.offsetBottom
     }
     // sends previous obj to Scroll Service
     this._ScrollService.setScrollPosition(componentsData);

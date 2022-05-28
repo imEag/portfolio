@@ -1,0 +1,36 @@
+.contact--title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem 0 3rem 0;
+}
+
+.contact--container {
+    margin: 10rem 0;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__card {
+    padding: 4rem;
+    background-color: var(--gray-light);
+    border-radius: 4rem;
+    max-width: 80rem;
+}
+
+.contact__card__list {
+    margin: 0rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact__card__list__el img {
+    width: 10rem;
+    height: 10rem;
+}
+
+@media only screen and (max-width: 600px) {}

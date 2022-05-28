@@ -67,7 +67,8 @@ export class FooterComponent implements OnInit {
         document.documentElement.scrollTop = this.scrollPositions.about - 150;
         break
       case 'contact':
-        break
+        document.documentElement.scrollTop =document.documentElement.scrollHeight;  
+      break
     }
   }
 

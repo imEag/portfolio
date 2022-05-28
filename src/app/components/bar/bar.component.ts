@@ -88,6 +88,7 @@ export class BarComponent implements OnInit, OnDestroy {
         document.documentElement.scrollTop = this.scrollPositions.about - 160 ;
         break
       case 'contact':
+        document.documentElement.scrollTop =document.documentElement.scrollHeight;
         break
     }
 
