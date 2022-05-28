@@ -12,10 +12,14 @@ export class BarComponent implements OnInit, OnDestroy {
 
   public subscriptionLanguage!: Subscription;
   public subscriptionScroll!: Subscription;
+
+  //Stores component's text to display
   public text: any;
 
-  public mobileBarOpened: boolean;
+  //Stores the scroll position of the other componets
   public scrollPositions: any;
+
+  public mobileBarOpened: boolean;
 
   //this is used to display the fixed nav bar
   public barIsFixed: boolean;
