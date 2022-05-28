@@ -3,18 +3,18 @@ import { LanguageService } from 'src/app/services/language.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-skills-description',
-  templateUrl: './skills-description.component.html',
-  styleUrls: ['./skills-description.component.css']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class SkillsDescriptionComponent implements OnInit, OnDestroy {
+export class AboutComponent implements OnInit {
 
   // Stores language servcice subscription
   public subscription!: Subscription;
 
   //Stores text from language service
   public text: any;
-  
+
   constructor(
     private _LanguageService: LanguageService
   ) { }
@@ -27,7 +27,6 @@ export class SkillsDescriptionComponent implements OnInit, OnDestroy {
     this.subscription = this._LanguageService.message_language.subscribe((text: any) => {
       this.text = text;
     });
-
   }
 
   ngOnDestroy(): void {

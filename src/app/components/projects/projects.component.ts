@@ -40,7 +40,6 @@ export class ProjectsComponent implements OnInit {
     //Loads any language change from language service.
     this.subscription = this._LanguageService.message_language.subscribe((text: any) => {
       this.text = text;
-      console.log(this.text);
     });
   }
 
@@ -54,7 +53,6 @@ export class ProjectsComponent implements OnInit {
     this._projectsService.getProjects().subscribe(
       response => {
         this.projectsList = response.projects;
-        console.log(response);
 
         // Splits langs string and turns it into an array
         this.projectsList = this.projectsList.map((project: any) => {
