@@ -11,6 +11,10 @@
         "work_btn": "Ver mi trabajo",
         "contact_btn": "Contactarme"
     },
+    "about": {
+        "title": "Acerca De Mi",
+        "description": "Apasionado por la tecnología. Desarrollador web y estudiante de ingeniería biomédica. Actualmente estoy creando proyectos personales con el objetivo de crear productos increíbles."
+    },
     "skillsDescription": {
         "title": "Mis Habilidades",
         "description": "Mi experiencia principal es el desarrollo front end, donde construyo aplicaciones reactivas, útiles y poderosas. Uso HTML, CSS, JavaScript combinado con AngularJs y Jquery. También desarrollo apliaciones en el back end, tales como APIs REST, construidas con NodeJs, ExpressJs, MongoDB y más tecnologías. "
