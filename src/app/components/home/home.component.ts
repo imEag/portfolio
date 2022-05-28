@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   //get DOM reference
   @ViewChild('profile') profile!: ElementRef;
-  @ViewChild('skills') skills!: ElementRef;
+  @ViewChild('about') about!: ElementRef;
   @ViewChild('projects') projects!: ElementRef;
 
 
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // creates a new object with name and scroll position of each component
     let componentsData = {
       'profile': this.profile.nativeElement.offsetTop,
-      'skills': this.skills.nativeElement.offsetTop,
+      'about': this.about.nativeElement.offsetTop,
       'projects': this.projects.nativeElement.offsetTop
     }
 
@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // creates a new object with name and scroll position of each component
     let componentsData = {
       'profile': this.profile.nativeElement.offsetTop,
-      'skills': this.skills.nativeElement.offsetTop,
+      'about': this.about.nativeElement.offsetTop,
       'projects': this.projects.nativeElement.offsetTop
     }
     // sends previous obj to Scroll Service

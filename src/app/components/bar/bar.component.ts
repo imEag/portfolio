@@ -84,8 +84,8 @@ export class BarComponent implements OnInit, OnDestroy {
       case 'projects':
         document.documentElement.scrollTop = this.scrollPositions.projects - 170;
         break
-      case 'skills':
-        document.documentElement.scrollTop = this.scrollPositions.skills - 150 ;
+      case 'about':
+        document.documentElement.scrollTop = this.scrollPositions.about - 160 ;
         break
       case 'contact':
         break

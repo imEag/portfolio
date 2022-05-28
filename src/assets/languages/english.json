@@ -2,7 +2,7 @@
     "bar": {
         "home": "Home",
         "projects": "Projects",
-        "skills": "Skills",
+        "about": "About Me",
         "contact": "Contact"
     },
     "profile": {
@@ -26,7 +26,7 @@
         "sections": {
             "title": "Sections",
             "home": "Home",
-            "skills": "Skills",
+            "about": "About Me",
             "projects": "Projects",
             "contact": "Contact",
             "manage": "Manage"
