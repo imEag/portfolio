@@ -3,26 +3,26 @@
     <div class="footer__sections">
         <h3 class="footer__sections--title">{{text.footer.sections.title}}</h3>
         <ul class="footer__sections__list">
-            <p class="section__list__el">{{text.footer.sections.home}}</p>
-            <p class="section__list__el">{{text.footer.sections.skills}}</p>
-            <p class="section__list__el">{{text.footer.sections.projects}}</p>
-            <p class="section__list__el">{{text.footer.sections.contact}}</p>
+            <p (click)="scrollTo('home')" class="section__list__el">{{text.footer.sections.home}}</p>
+            <p (click)="scrollTo('skills')" class="section__list__el">{{text.footer.sections.skills}}</p>
+            <p (click)="scrollTo('projects')" class="section__list__el">{{text.footer.sections.projects}}</p>
+            <p (click)="scrollTo('contact')" class="section__list__el">{{text.footer.sections.contact}}</p>
             <!-- <p routerLink="/manage" class="section__list__el">{{text.footer.sections.manage}}</p> -->
         </ul>
     </div>
     <div class="footer__contact">
         <h3 class="footer__contact--title">{{text.footer.contact.title}}</h3>
         <ul class="footer__contact__list">
-            <a href="" class="contact__list__el">
+            <a target="_blank" rel="noopener noreferrer" class="contact__list__el" href="https://github.com/imEag">
                 <img class="footer--icon" src="assets/icons/social_media/github.png" alt="Github">
             </a>
-            <a href="" class="contact__list__el">
+            <a target="_blank" rel="noopener noreferrer" class="contact__list__el" href="https://discordapp.com/users/imeag#2044">
                 <img class="footer--icon" src="assets/icons/social_media/discord.png" alt="Discord">
             </a>
-            <a href="" class="contact__list__el">
+            <a target="_blank" rel="noopener noreferrer" class="contact__list__el" href="mailto:emma145@hotmail.es">
                 <img class="footer--icon" src="assets/icons/social_media/email.png" alt="E-mail">
             </a>
-            <a href="" class="contact__list__el">
+            <a target="_blank" rel="noopener noreferrer" class="contact__list__el" href="https://www.linkedin.com/in/emmanuelarizabaletagarces/">
                 <img class="footer--icon" src="assets/icons/social_media/linkedin.png" alt="LinkedIn">
             </a>
         </ul>
