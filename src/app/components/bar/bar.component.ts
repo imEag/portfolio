@@ -62,8 +62,8 @@ export class BarComponent implements OnInit, OnDestroy {
   openMobileBar(): void {
     this.mobileBarOpened = true;
 
-    //scroll to top
-    document.documentElement.scrollTop = 0;
+    /* //scroll to top
+    document.documentElement.scrollTop = 0; */
   }
 
   closeMobileBar(): void {

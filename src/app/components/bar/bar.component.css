@@ -75,7 +75,7 @@
         align-items: center;
         width: 100vw;
         background-color: var(--white);
-        position: absolute;
+        position: fixed;
         top: 0;
         border-bottom: .1rem solid var(--gray-dark);
     }
