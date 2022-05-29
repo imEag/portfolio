@@ -2,7 +2,7 @@
     "bar": {
         "home": "Home",
         "projects": "Projects",
-        "skills": "Skills",
+        "about": "About Me",
         "contact": "Contact"
     },
     "profile": {
@@ -11,6 +11,10 @@
         "work_btn": "See my work",
         "contact_btn": "Talk to me"
     },
+    "about": {
+        "title": "About Me",
+        "description": "Passionate about technology, Web Developer and Biomedical Engineering Student from Colombia. I am currently making personal projects in order to create awesome products."
+    },
     "skillsDescription": {
         "title": "My Skills",
         "description": "My main experience is front end development, where I build powerful, reactive and useful websites. I use HTML, CSS and JavaScript joint with AngularJS and Jquery. I also develop backend applications such as REST APIs built with NodeJs, ExpressJs, MongoDB and more technologies."
@@ -18,11 +22,14 @@
     "projects": {
         "title": "My Work"
     },
+    "contact": {
+        "title": "Contact"
+    },
     "footer": {
         "sections": {
             "title": "Sections",
             "home": "Home",
-            "skills": "Skills",
+            "about": "About Me",
             "projects": "Projects",
             "contact": "Contact",
             "manage": "Manage"
