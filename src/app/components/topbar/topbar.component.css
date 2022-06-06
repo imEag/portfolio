@@ -7,3 +7,7 @@
     font-weight: bolder;
     font-size: 1rem;
 }
+
+.top-bar__title {
+    cursor: pointer;
+}
