@@ -11,6 +11,7 @@ import { ContactComponent} from "./components/contact/contact.component";
 import { Page404Component } from "./components/page404/page404.component";
 import { ManageComponent } from "./components/manage/manage.component";
 import { EditComponent } from "./components/edit/edit.component";
+import { CreditPageComponent } from "./components/credit-page/credit-page.component";
 
 
 const appRoutes: Routes = [
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     {path: 'create', component: CreateComponent},
     {path: 'manage', component: ManageComponent},
     {path: 'edit/:id', component: EditComponent},
+    {path: 'credits', component: CreditPageComponent},
     {path: '**', component: Page404Component}
 ];
 

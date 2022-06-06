@@ -1,0 +1,12 @@
+.credits--container {
+    margin: 8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.credits--title {
+    font-size: 2rem;
+    text-align: center;
+}
