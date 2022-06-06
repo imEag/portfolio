@@ -32,7 +32,8 @@
             "about": "About Me",
             "projects": "Projects",
             "contact": "Contact",
-            "manage": "Manage"
+            "manage": "Manage",
+            "credits": "Credits"
         },
         "contact": {
             "title": "Contact Me"

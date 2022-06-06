@@ -32,7 +32,8 @@
             "about": "Acerca",
             "projects": "Proyectos",
             "contact": "Contacto",
-            "manage": "Gestionar"
+            "manage": "Gestionar",
+            "credits": "Creditos"
         },
         "contact": {
             "title": "Contáctame"
