@@ -25,6 +25,7 @@ import { ScrollService } from './services/scroll.service';
 import { SkillsDescriptionComponent } from './components/skills-description/skills-description.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { AboutComponent } from './components/about/about.component';
+import { CreditPageComponent } from './components/credit-page/credit-page.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AboutComponent } from './components/about/about.component';
     SkillsDescriptionComponent,
     TopbarComponent,
     AboutComponent,
+    CreditPageComponent,
   ],
   imports: [
     BrowserModule,
