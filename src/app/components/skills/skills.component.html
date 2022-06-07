@@ -4,7 +4,10 @@
         <h3 class="skills__band__title">Tools</h3>
 
         <div class="slider">
-            <div class="slide-track">
+
+
+            <!-- this ngStyle is equivalent to the css: width: calc(20rem * numOfElements);  -->
+            <div class="slide-track" [ngStyle]="{'width': skills_list.length*20+'rem'}">
                 <div class="slide" *ngFor="let element of skills_list">
                     <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
                             alt="" /> -->
