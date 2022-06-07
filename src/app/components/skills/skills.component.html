@@ -2,14 +2,17 @@
 <section class="skills">
     <div class="skills__band-container">
         <h3 class="skills__band__title">Tools</h3>
-        <ul class="skills__list">
-            <div class="skills__list__el" *ngFor="let element of skills_list">
 
-                <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
-                <!-- <img class="skills__list__el--img" src="../../../assets/icons/skills/angular.png" alt="logo"> -->
-                <p class="skills__list__el--name">{{element.name}}</p>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide" *ngFor="let element of skills_list">
+                    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
+                            alt="" /> -->
+                    <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
+                    <p class="skills__list__el--name">{{element.name}}</p>
+                </div>
             </div>
+        </div>
 
-        </ul>
     </div>
 </section>

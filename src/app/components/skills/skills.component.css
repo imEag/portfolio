@@ -1,3 +1,4 @@
+/* Skills list container */
 
 .skills__card__img--img {
     width: 20rem;
@@ -21,13 +22,13 @@
     color: var(--white);
 }
 
-.skills__list {
+/* .skills__list {
     overflow-x: scroll;
     flex-wrap: nowrap;
     display: flex;
     align-items: center;
-    padding: 4rem;
     gap: 4rem;
+    padding: 4rem;
 }
 
 .skills__list::-webkit-scrollbar {
@@ -39,13 +40,79 @@
     justify-content: space-between;
     align-items: center;
 }
+ */
 
+/* slider */
+
+/* animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(20rem*5));
+    }
+
+    100% {
+        transform: translateX(calc(-20rem * 14));
+    }
+}
+
+/* slider container */
+.slider {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100rem;
+}
+
+/* slider border gradients */
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, var(--gray-dark) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 10rem;
+    position: absolute;
+    width: 15rem;
+    z-index: 1;
+}
+
+/* left gradient */
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* right gradient */
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+/* animation */
+.slider .slide-track {
+    animation: scroll 5s linear infinite;
+    display: flex;
+    width: calc(20rem * 14);
+}
+
+/* each element of slider */
+.slider .slide {
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* image of each element */
 .skills__list__el--img {
     width: 3rem;
     height: 3rem;
-    margin-right: 1rem;
 }
 
+/* name of each element */
 .skills__list__el--name {
     font-size: 2rem;
     font-weight: bold;
