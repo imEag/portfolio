@@ -47,16 +47,12 @@
 /* animation */
 @keyframes scroll {
     0% {
-        transform: translateX(20rem);
+        transform: translateX(0);
     }
 
-    90% {
-        /* Change this if the number of skills changes example: if the num of skills is X, put X-1 */
-        transform: translateX(calc(-20rem * 13));
-
-    }
     100% {
-        transform: translateX(20rem);
+        /* Change this if the number of skills changes example: if the num of skills is X, put X*/
+        transform: translateX(calc(-20rem * 14));
     }
 }
 
@@ -98,8 +94,8 @@
 .slider .slide-track {
     animation: scroll 30s linear infinite;
     display: flex;
-    /* width added from html */
-    /* width: calc(20rem * 14); */
+    /* calc # of elements * its width */
+    width: calc(20rem * 28);
 }
 
 /* each element of slider */

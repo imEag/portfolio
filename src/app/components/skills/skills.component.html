@@ -1,21 +1,18 @@
-<!-- TODO Make an automatic scroll animation through skills section -->
 <section class="skills">
     <div class="skills__band-container">
         <h3 class="skills__band__title">Tools</h3>
-
         <div class="slider">
-
-
-            <!-- this ngStyle is equivalent to the css: width: calc(20rem * numOfElements);  -->
-            <div class="slide-track" [ngStyle]="{'width': skills_list.length*20+'rem'}">
+            <div class="slide-track">
+                <!-- Displays two copies of skills section to make an smooth transition between the end and the beginning of skills list -->
                 <div class="slide" *ngFor="let element of skills_list">
-                    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
-                            alt="" /> -->
+                    <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
+                    <p class="skills__list__el--name">{{element.name}}</p>
+                </div>
+                <div class="slide" *ngFor="let element of skills_list">
                     <img class="skills__list__el--img" src="{{element.img_url}}" alt="logo">
                     <p class="skills__list__el--name">{{element.name}}</p>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
