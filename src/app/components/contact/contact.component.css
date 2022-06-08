@@ -35,4 +35,18 @@
     height: 10rem;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 400px) {
+    .contact__card {
+        padding: 2rem;
+    }
+
+    .contact__card__list {
+        gap: 2rem;
+    }
+
+    .contact__card__list__el img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+}
