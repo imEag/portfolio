@@ -19,6 +19,7 @@
     background-color: var(--gray-light);
     border-radius: 4rem;
     max-width: 80rem;
+
 }
 
 .contact__card__list {
@@ -30,23 +31,35 @@
     gap: 4rem;
 }
 
+.contact__card__list__el {
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .contact__card__list__el img {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+}
+
+.contact__card__name {
+    font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 400px) {
     .contact__card {
-        padding: 2rem;
+        padding: 1.6rem;
     }
 
     .contact__card__list {
-        gap: 2rem;
+        gap: 1.6rem;
     }
 
     .contact__card__list__el img {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
     }
 
 }
