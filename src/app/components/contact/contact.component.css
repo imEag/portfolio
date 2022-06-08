@@ -46,6 +46,7 @@
 
 .contact__card__name {
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 400px) {
