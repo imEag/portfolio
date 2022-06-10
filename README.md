@@ -3,6 +3,7 @@
 
 My personal website, also my portfolio.
 
+[Visit the project website](https://imeag.github.io/portfolio/)
 
 ## Features
 
