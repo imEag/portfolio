@@ -6,6 +6,8 @@ export class Project {
         public category: string,
         public year: number,
         public langs: string,
-        public image: string
+        public image: string,
+        public project_url: string,
+        public gh_url: string
     ){}
 }
