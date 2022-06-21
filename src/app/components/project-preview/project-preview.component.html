@@ -9,6 +9,20 @@
         <ul class="p_preview__desc__tools">
             <li class="p_preview__desc__tools--tool" *ngFor="let item of projectData.langs">{{item}}</li>
         </ul>
-        <!-- TODO Add link to project and link to GH buttons -->
+
+        <!-- If the project doesn't contain both project website and github url, shows a message that says work in progress -->
+        <p class="p-preview__no-links" *ngIf="!projectData.project_url || !projectData.gh_url">Work in progress</p>
+
+        <!-- If the project does contain both project website and github url, shows both link buttons -->
+        <div class="p-preview__links" *ngIf="projectData.project_url && projectData.gh_url">
+            <a href="{{projectData.project_url}}" class="p-preview__links--project" target="_blank" rel="noopener noreferrer">
+                <img src="../../../assets/icons/ui/web32px.png" class="p-preview__links--project--img" alt="web icon">
+                Project's Website
+            </a>
+            <a href="{{projectData.gh_url}}" class="p-preview__links--gh" target="_blank" rel="noopener noreferrer">
+                <img src="../../../assets/icons/ui/github32px.png" class="p-preview__links--gh--img" alt="web icon" >
+                GitHub Repo
+            </a>
+        </div>
     </div>
 </article>
