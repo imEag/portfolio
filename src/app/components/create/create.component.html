@@ -41,10 +41,16 @@
             <input type="file" name="image" id="" #image="ngModel" (ngModel)="project.image" class="element__input element__input--file btn-alter" (change)="fileChangeEvent($event)" placeholder="Upload image" required>
             <span *ngIf="image.touched && !image.valid" class="element__warning">Image is mandatory</span>
         </div>
-
-        
+        <div class="create-form__form__element">
+            <label for="project-url" class="element__label">Project's URL</label>
+            <input type="text" name="project-url" id="" #project_url="ngModel" [(ngModel)]="project.project_url" class="element__input" required>
+            <span *ngIf="project_url.touched && !project_url.valid" class="element__warning">Project's URL is mandatory</span>
+        </div><div class="create-form__form__element">
+            <label for="gh-url" class="element__label">GitHub's URL</label>
+            <input type="text" name="gh-url" id="" #gh_url="ngModel" [(ngModel)]="project.gh_url" class="element__input" required>
+            <span *ngIf="gh_url.touched && !gh_url.valid" class="element__warning">GitHub's URL is mandatory</span>
+        </div>
         
         <input type="submit" value="Send" class="create-form__form__send btn" [disabled]="!projectForm.form.valid">
-        <!-- TODO add link to project and link to GitHub in form -->
     </form>
 </div>

@@ -28,7 +28,7 @@ export class EditComponent implements OnInit {
     private _router: Router
   ) {
     this.title = "Edit project";
-    this.project = new Project('', '', '', '', 2022, '', '');
+    this.project = new Project('', '', '', '', 2022, '', '', '', '');
     this.status = 'none';
     this.filesToUpload = [];
     this.url = Global.url;
