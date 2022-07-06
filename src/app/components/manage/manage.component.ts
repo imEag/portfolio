@@ -25,7 +25,7 @@ export class ManageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.projectsList)
+    /* console.log(this.projectsList) */
     this.getProjects()
   }
 
@@ -33,7 +33,7 @@ export class ManageComponent implements OnInit {
     this._projectsService.getProjects().subscribe(
       response => {
         this.projectsList = response.projects;
-        console.log(response);
+        /* console.log(response); */
 
         // Splits langs string and turns it into an array
         this.projectsList = this.projectsList.map((project: any) => {
@@ -49,7 +49,29 @@ export class ManageComponent implements OnInit {
     );
   }
 
-  deleteProject(id: any): void {
+  deleteProject(project: any): void {
+    let id = project._id;
+
+    // verifies if the projects has an image
+    if (project.image !== null && project.image !== "" && project.image) {
+      let image_url =  {
+        // this key  is the parameter that will be read by the backend and the name must be the same.
+        imageUrl: project.image
+      }
+      
+      //Sends image url to delete the image in GCS
+      this._projectsService.deleteImage(image_url).subscribe(
+        response => {
+          /* console.log('image succesfully deleted', response); */
+        },
+        error => {
+          console.log(<any>error);
+        }
+      )
+
+    } 
+
+    //deletes project from mongo DB
     this._projectsService.deleteProjects(id).subscribe(
       response => {
         if (response.project) {

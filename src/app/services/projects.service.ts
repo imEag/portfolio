@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpRequest } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { Project } from "../models/project.model";
 import { Global } from "./global.service";
@@ -28,10 +28,10 @@ export class ProjectsService {
         return this._http.get(this.url + 'projects', { headers: headers });
     }
 
-    getProject(id : any): Observable<any> {
+    getProject(id: any): Observable<any> {
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.get(this.url + 'project/'+id, {headers: headers});
+        return this._http.get(this.url + 'project/' + id, { headers: headers });
     }
 
     deleteProjects(id: any): Observable<any> {
@@ -40,11 +40,18 @@ export class ProjectsService {
         return this._http.delete(this.url + 'project/' + id, { headers: headers });
     }
 
+    deleteImage(image_url: any): Observable<any> {
+        let params = JSON.stringify(image_url);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+        return this._http.put(this.url + 'deleteImage', params, { headers: headers });
+    }
+
     updateProject(project: any): Observable<any> {
         let params = JSON.stringify(project);
         let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.put(this.url+'project/'+project._id, params, {headers: headers});
+        return this._http.put(this.url + 'project/' + project._id, params, { headers: headers });
     }
 
 }

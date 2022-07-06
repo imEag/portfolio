@@ -5,7 +5,7 @@
             <app-project-preview class="manage__project-preview" [projectData]="project" [projectsUrl]="url"></app-project-preview>
             <div class="manage__project__buttons">
                 <button class="buttons__edit-btn btn-alter" [routerLink]="['/edit', project._id]">Edit</button>
-                <button class="buttons__delete-btn btn" (click)="deleteProject(project._id)">Delete</button>
+                <button class="buttons__delete-btn btn" (click)="deleteProject(project)">Delete</button>
             </div>
         </div>
     </ng-template>

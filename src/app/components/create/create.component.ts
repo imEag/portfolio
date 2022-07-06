@@ -37,7 +37,7 @@ export class CreateComponent implements OnInit {
   onSubmit(form: any) {
     this._projectsServices.saveProject(this.project).subscribe(
       response => {
-        console.log(response);
+        /* console.log(response); */
         if (response.project) {
           
           let uploadImageUrl = Global.url+'uploadImage/'+response.project._id;
@@ -45,7 +45,7 @@ export class CreateComponent implements OnInit {
           this._uploadService.makeFileRequest(uploadImageUrl, [], this.filesToUpload, 'image')
           .then((result:any) => {
             this.status = 'success';
-            console.log(result);
+            /* console.log(result); */
             form.reset();
           });
 
@@ -56,7 +56,7 @@ export class CreateComponent implements OnInit {
           this.status = 'failed';
         }
         
-        console.log(this.status);
+        /* console.log(this.status); */
 
       },
       error => {
@@ -67,7 +67,7 @@ export class CreateComponent implements OnInit {
 
   fileChangeEvent(fileInput: any) {
     this.filesToUpload = <Array<File>>fileInput.target.files;
-    console.log(this.filesToUpload);
+    /* console.log(this.filesToUpload); */
   }
 
 }
